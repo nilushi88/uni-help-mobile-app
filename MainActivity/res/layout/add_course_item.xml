@@ -27,7 +27,6 @@
 
             <requestFocus />
         </EditText>
-
     </TableRow>
 
     <TableRow
@@ -53,11 +52,79 @@
             android:ems="10"
             android:inputType="textMultiLine"
             android:textAlignment="textStart" />
-
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow3"
+        android:id="@+id/trDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDueDateSelection"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvDueDateLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date" />
+
+        <TextView
+            android:id="@+id/tvDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trTimeDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDueTimeSelection"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvTimeDueLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Due" />
+
+        <TextView
+            android:id="@+id/tvTimeDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onReminderSelection"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvRemindMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind Me" />
+
+        <TextView
+            android:id="@+id/tvRemindMeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Day(s) Before" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -69,6 +136,7 @@
             android:id="@+id/btnAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="addAssignment"
             android:text="Add" />
 
         <Button
@@ -77,8 +145,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
+            android:onClick="onCancel"
             android:text="Cancel" />
-
     </TableRow>
 
 </TableLayout>

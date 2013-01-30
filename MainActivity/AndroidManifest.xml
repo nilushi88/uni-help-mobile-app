@@ -22,12 +22,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="uwl.atse.unihelp.ui.AddCourseItem"></activity>
-        
-        <activity android:name="uwl.atse.unihelp.ui.AddCourse"></activity>
-           <activity android:name="uwl.atse.unihelp.ui.DisplayCourses"></activity>
-           <activity android:name="uwl.atse.unihelp.ui.CourseView"></activity>
+        <activity android:name="uwl.atse.unihelp.ui.AddCourseItem" >
+        </activity>
+        <activity android:name="uwl.atse.unihelp.ui.AddCourse" >
+        </activity>
+        <activity android:name="uwl.atse.unihelp.ui.DisplayCourses" >
+        </activity>
+        <activity android:name="uwl.atse.unihelp.ui.CourseView" >
+        </activity>
+        <activity android:name="uwl.atse.unihelp.ui.NotificationDisplay" >
+        </activity>
+         <activity android:name="uwl.atse.unihelp.ui.AssignmentView" >
+        </activity>
+        <service android:name="uwl.atse.unihelp.service.ScheduleService" />
+        <service android:name="uwl.atse.unihelp.service.NotificationService" />
     </application>
 
 </manifest>
